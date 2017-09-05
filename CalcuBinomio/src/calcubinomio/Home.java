@@ -20,7 +20,7 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 /**
- *
+ * Se ejecuta el progama en Java Swing
  * @author Sanchez Mendez Edmundo y Rodriguez Morua Genaro
  * @version 3.0 25/08/17
  */
@@ -33,12 +33,21 @@ public class Home extends JFrame implements ActionListener{
     int Fact,fibo;
     Boolean Continuar=false;
     private JLabel titulo, instruccion,instruccion1,instruccion2;
-    
+    /**
+    * <h3>HOME</h3>
+    * Este constructor inicializa una calculadora de binomios
+    * en un frame 
+    * 
+    */
     public Home(){
         configurarVentana();
        iniciarComponentes();
     }
-    //Configuramos el tamaño y otras caracteristicas de la ventana
+    /**
+    * <h3>Configuracion del JFrame</h3>
+    *Configuramos el tamaño y otras caracteristicas de la ventana
+    * 
+    */
     public void configurarVentana(){
         setTitle("Calculadora de Binimios al cuadrado");
         setSize(600,300);
@@ -48,7 +57,11 @@ public class Home extends JFrame implements ActionListener{
         setBackground(new Color(220,216,255));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-    //Inicialiciamos los componentes que la ventana tendra
+    /**
+    * <h3>Inicio de los componentes que se encuentran en el JFrame</h3>
+    *Añadimos todos los botones, Label's y JTextField's que se ocuparan
+    * 
+    */
     public void iniciarComponentes(){
         titulo = new JLabel("Calculadora de Binimios al cuadrado");
         titulo.setBounds(125, 25, 750, 30);
@@ -134,7 +147,13 @@ public class Home extends JFrame implements ActionListener{
         add(resultado1);
         resultado1.setVisible(true);
     }
-    //Damos instrucciones a los botones
+    /**
+    * <h3>Accion de los botones</h3>
+    * Recibimos los datos ingresados en los JTextField's
+    * Y los procesamos para la obtencion de un resultado
+    * en este caso obtenemos un Binomio mostrandolo en un JTextField
+    * @param e lo ocupamos para que escuche la accion de los botones
+    */
     @Override
     public void actionPerformed(ActionEvent e){
        //valida los campos

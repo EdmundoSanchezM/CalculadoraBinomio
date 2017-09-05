@@ -11,10 +11,11 @@ package calcubinomio;
  * @version 3.0 25/08/17
  */
 public class CalcuBinomio {
-
-    /**
-     * @param args the command line arguments
-     */
+    /*<h3>Class CalcuBinomio</h3>
+    * Este constructor inicializa una calculadora de binomios
+    * en un frame 
+    * 
+    */
     public static void main(String[] args) {
         Home objH = new Home();
         objH.setVisible(true);
